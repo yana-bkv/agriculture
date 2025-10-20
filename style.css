@@ -56,6 +56,8 @@ p, li {
     font-family: "Open Sans", sans-serif;
 }
 
+/*Header*/
+
 header {
     padding: 69px 0;
 }
@@ -68,14 +70,15 @@ header {
     padding-inline: 10px;
     max-width: 1600px;
     margin: 0 auto;
-    gap: 130px;
 }
 
 .header-container-left {
     display: flex;
     align-items: center;
     gap: 150px;
-    max-width: 910px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 920px;
     width: 100%;
 }
 
@@ -185,4 +188,46 @@ nav svg {
 
 .cart button:hover {
     background-color: var(--primary-lighter-color);
+}
+
+/*Main section*/
+
+.welcome-section {
+    background-image: url(assets/images/Background.png), url(assets/images/img.png);
+    background-position: center, right 20px center;
+    background-size: cover, 50%;
+    background-repeat: no-repeat, no-repeat;
+
+
+    padding: 247px 0;
+}
+
+.welcome-section-container {
+    max-width: 1400px;
+    width: 100%;
+    margin-inline: 20% auto;
+}
+
+.welcome-section span {
+    color: #68A47F;
+    font-family: "Yellowtail", cursive;
+    font-size: 2.25rem;
+    font-weight: normal;
+}
+
+.welcome-section button {
+    border: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    background-color: var(--yellow);
+    max-width: 220px;
+    max-height: 79px;
+    padding: 28px 39px;
+    border-radius: 16px;
+}
+
+.welcome-section button svg {
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
 }
